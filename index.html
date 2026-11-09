@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf8f2">
+  <meta name="description" content="Discord Botの紹介サイト">
+  <title>Bot紹介サイト</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="topline"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark"><span></span><span></span><span></span></span><span data-bot-name>Bot</span></a>
+    <button class="menu-toggle" aria-label="メニュー" aria-expanded="false"><i></i><i></i></button>
+    <nav class="main-nav" aria-label="メインメニュー">
+      <a href="#about" data-i18n="navAbout">Botについて</a>
+      <a href="#features" data-i18n="navFeatures">機能</a>
+      <a href="#commands" data-i18n="navCommands">使い方</a>
+      <a href="#faq" data-i18n="navFaq">FAQ</a>
+      <a href="#support" data-i18n="navSupport">サポート</a>
+      <label class="language-control"><span class="sr-only" data-i18n="language">言語</span><select id="language-select" aria-label="Language"><option value="ja">日本語</option><option value="en">English</option></select></label>
+      <a class="settings-link" href="settings.html" data-i18n="settings">設定</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="heroKicker">Discordで使えるBot</span></p>
+        <h1 data-i18n-html="heroTitle">あなたのサーバーに、<br><em>新しい便利さ</em>を。</h1>
+        <p class="hero-lead" data-i18n="heroLead">Botの特徴や機能を紹介するページです。ここに、このBotならではの魅力を掲載できます。</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#features"><span data-i18n="seeFeatures">機能を見る</span><svg class="icon icon-arrow-down" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15m-6-6 6 6 6-6"/></svg></a>
+          <a class="text-link" data-support-link href="#support"><span data-i18n="contact">お問い合わせ</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+        </div>
+        <div class="hero-note"><svg class="icon note-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8 14.2 9.8 21.2 12 14.2 14.2 12 21.2 9.8 14.2 2.8 12 9.8 9.8Z"/></svg><span data-i18n="heroNote">導入方法や利用条件も、このページで確認できます。</span></div>
+      </div>
+      <div class="hero-art" aria-label="Bot illustration">
+        <div class="art-paper paper-back"></div>
+        <div class="art-paper paper-front">
+          <div class="paper-top"><span data-i18n="paperLabel">Botの紹介</span><span class="paper-status" data-i18n="paperStatus">ご案内</span></div>
+          <div class="bot-face"><span class="face-eye left"></span><span class="face-eye right"></span><span class="face-mouth"></span><span class="face-cheek"></span></div>
+          <div class="paper-caption"><span data-i18n="paperCaptionKicker">いつものサーバーに</span><b data-i18n-html="artCaption">毎日に、<br>ちょうどいい相棒。</b></div>
+          
+        </div>
+        <svg class="art-spark spark-one" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 2 24.5 15.5 38 20 24.5 24.5 20 38 15.5 24.5 2 20 15.5 15.5Z"/></svg><svg class="art-spark spark-two" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 2 24.5 15.5 38 20 24.5 24.5 20 38 15.5 24.5 2 20 15.5 15.5Z"/></svg>
+        <span class="art-sticker" data-i18n="artSticker">Discord向け</span><div class="art-shadow"></div>
+      </div>
+      <div class="hero-bottomline"><span data-i18n="heroBottomline">機能や使い方を、順番にご紹介します。</span></div>
+    </section>
+
+    <section class="intro-strip"><div class="section-wrap strip-inner"><p data-i18n="stripKicker">コミュニティのために</p><div><svg class="icon strip-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8 14.2 9.8 21.2 12 14.2 14.2 12 21.2 9.8 14.2 2.8 12 9.8 9.8Z"/></svg><span data-i18n="stripText">サーバーでの時間を、もっと快適に。</span></div><span class="strip-side" data-i18n="stripSide">使いやすさを大切に</span></div></section>
+
+    <section class="section-wrap single-section" id="about">
+      <div class="section-heading"><div><p class="eyebrow" data-i18n="aboutKicker">まずは、このBotについて</p><h2 data-i18n="aboutTitle">このBotについて</h2></div><p class="section-description" data-i18n="aboutLead">Botの概要や制作の目的を紹介します。設定ファイルに入力した内容がここに表示されます。</p></div>
+      <div class="single-bot-panel">
+        <div class="single-bot-icon" id="bot-icon" aria-label="Bot icon"><svg class="bot-fallback-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 5 38 25 58 32 38 39 32 59 26 39 6 32 26 25Z"/></svg></div>
+        <div class="single-bot-copy"><p class="bot-kicker" data-i18n="botKicker">紹介しているBot</p><h3 id="bot-name">Bot名</h3><p id="bot-description" data-i18n="botDescriptionPlaceholder">Botの説明を設定ファイルに入力してください。</p><div class="bot-tags" id="bot-tags"></div><div class="detail-actions" id="bot-links"></div></div>
+      </div>
+    </section>
+
+    <section class="about-section" id="features"><div class="section-wrap about-grid"><div class="about-heading"><p class="eyebrow" data-i18n="featuresKicker">主な機能</p><h2 data-i18n-html="featuresTitle">できることを、<br><em>シンプルに。</em></h2><p data-i18n="featuresLead">主な機能や特徴を紹介するセクションです。Botの実際の機能に合わせて内容を設定してください。</p></div><div class="principles" id="feature-list"><article class="principle"><span class="principle-no">01</span><div><h3 data-i18n="featurePlaceholder">機能を設定してください</h3><p data-i18n="featurePlaceholderText">assets/config.js から機能を追加できます。</p></div><svg class="principle-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8 14.2 9.8 21.2 12 14.2 14.2 12 21.2 9.8 14.2 2.8 12 9.8 9.8Z"/></svg></article></div></div></section>
+
+    <section class="section-wrap guide-section" id="commands"><div class="section-heading"><div><p class="eyebrow" data-i18n="commandsKicker">使い方のご案内</p><h2 data-i18n="commandsTitle">使い方</h2></div><p class="section-description" data-i18n="commandsLead">コマンドや操作方法を、初めて使う方にもわかりやすく紹介します。</p></div><div class="command-list" id="command-list"><p data-i18n="commandPlaceholder">使い方は設定ファイルから追加できます。</p></div></section>
+
+    <section class="faq-section" id="faq"><div class="section-wrap faq-grid"><div><p class="eyebrow" data-i18n="faqKicker">よくある質問</p><h2 data-i18n="faqTitle">よくある質問</h2><p class="faq-intro" data-i18n="faqLead">利用前に気になることをまとめています。</p></div><div class="faq-list" id="faq-list"><details><summary data-i18n="faqPlaceholder">質問と回答を設定してください。</summary><p data-i18n="faqPlaceholderText">assets/config.js からFAQを追加できます。</p></details></div></div></section>
+
+    <section class="support-section" id="support"><div class="section-wrap support-panel"><svg class="support-decoration" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4 39 25 60 32 39 39 32 60 25 39 4 32 25 25Z"/></svg><p class="eyebrow" data-i18n="supportKicker">サポート窓口</p><h2 data-i18n-html="supportTitle">わからないことは、<br>気軽にご相談ください。</h2><p data-i18n="supportLead">導入方法や使い方についての質問はこちらから。</p><a class="button button-light" data-support-link href="#support"><span data-i18n="supportButton">サポートDiscordへ</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div></section>
+  </main>
+  <footer class="site-footer"><div class="section-wrap footer-top"><a class="brand footer-brand" href="index.html"><span class="brand-mark"><span></span><span></span><span></span></span><span data-bot-name>Bot</span></a><p data-i18n="footerLine">あなたのDiscordに、ちょうどいい便利さを。</p><a class="back-top" href="#top"><span data-i18n="backTop">ページ上部へ</span> <svg class="icon icon-up" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V4m-6 6 6-6 6 6"/></svg></a></div><div class="section-wrap footer-bottom"><span>© <span id="year"></span> <span data-bot-name>Bot</span></span><span data-i18n="disclaimer">このサイトはDiscord Inc.とは関係ありません。</span></div></footer>
+  <script src="assets/config.js"></script><script src="assets/app.js"></script>
+</body></html>
